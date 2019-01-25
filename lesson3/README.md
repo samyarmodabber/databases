@@ -1,58 +1,60 @@
 # Lesson 3: Data Models, Relationships, and Schemas
 
-In the final week, additional theory will be covered to discuss more complex relational data. Students will learn about entity relationship modelling and how to convert these models to a database schema using normalisation and foreign-key constraints. Non-relational data will also be considered, as well as the benefits and drawbacks of relational and non-relational models.
+In the final week, students will learn how to use NodeJS to interact with a MySQL database. MongoDB, as an example of a non-relational database, will also be introduced, as well as the benefits and drawbacks of relational and non-relational models.
 
-Objective: Students should be able to create an entity relationship diagram based on a qualitative description of data requirements, and translate that into a MySQL database schema. Students should also be able to compare and contrast relational (like MySQL) and NoSQL databases (considering their benefits and drawbacks).
+Objective: Students will have a basic understanding of database usage in a web application, including parameter validation, escaping, and prepared statements. Students should also be able to compare and contrast relational (like MySQL) and NoSQL databases (considering their benefits and drawbacks).
+
 
 ## Pre-Class Readings
 
-Before arriving to class on Sunday, please watch all of the videos in [this video playlist](https://www.lynda.com/SharedPlaylist/ae29ea2f495c432793abc220da47baa6) on Lynda.
-- Choosing Primary Keys
-- Defining One-to-Many Relationships
-- Exploring One-to-One Relationships
-- Exploring Many-to-Many Relationships
-- Understanding Relationship Rules and Referential Integrity
-- Defining Table Relationships
-- NoSQL databases
-- GraphQL: Introduction and History
-- Why use GraphQL?
+Also, please read the following pages that explains the ACID database model and connecting to MySQL from node.
+- [The ACID Database Model](https://www.thoughtco.com/the-acid-model-1019731)
+- [Node MySQL Documentation on Github](https://github.com/mysqljs/mysql)
 
-Also, please read the following page that explains database foreign keys.
-- [What is a Database Foreign Key](http://databases.about.com/cs/specificproducts/g/foreignkey.htm)
 
 ## Main Topics
 
-- More complex entity relationship diagrams
-    - Associative entities from many-to-many relationships
-    - Introduction to normalisation
-- Foreign key constraints
-- Complicated values to store in MySQL
-    - Storing prices (floating point errors)
-    - Storing date and time (datetime vs. timestamp)
-    - Timezones when storing date and time
-- Brief introduction to non-relational data
-- Scaffolding and application generators
-- Creating an ER model and a database from existing data
+- Security
+    - SQL Injection
+    - User GRANTS
+- Connecting to MySQL from node
+- Writing SQL in your node application
+    - Raw SQL strings
+    - Parameter validation
+    - Escaping
+    - Prepared statements
+- Introduction to non-relational data with MongoDB
+    - MongoDB vs. SQL
+    - Create/Drop database
+    - Insert/Update/Delete data
+    - Query data
+    - Relationships: embedded vs. referenced
+    - Replication and sharding
+    - Atomicity
+
 
 ## Reference Material
 
-- [Floating Point Inaccuracy](http://stackoverflow.com/questions/2100490/floating-point-inaccuracy-examples#2100502)
-- [Example Entity Relationship Diagram (including associative entities)](http://users.csc.calpoly.edu/~jdalbey/308/Lectures/HOWTO-ERD.html)
-- Scaffolding tools:
-    - [Yeoman](http://yeoman.io) - General framework for creating and scaffolding all types of projects
-    - [Sails](http://sails.js) - Lightweight framework for generating APIs and web server apps in Node
-    - [Loopback](http://loopback.io/) - A more "enterprise-ready" framework for generating and managing APIs.
-- [Rewatch the previously recorded session](https://www.youtube.com/watch?v=ZNLhHUDj6jo)
+- [OWASP on SQL Injection](https://www.owasp.org/index.php/SQL_injection)
+- [Parameter Validation on Wikipedia](https://en.wikipedia.org/wiki/Parameter_validation)
+- [Node MySQL Escaping Query Values](https://github.com/mysqljs/mysql#escaping-query-values)
+- [Node MySQL Preparing Queries (automatic escaping)](https://github.com/mysqljs/mysql#preparing-queries)
+- [MySQL SHOW GRANTS](https://dev.mysql.com/doc/refman/5.7/en/show-grants.html)
+
 
 ## Homework
 
-For this week's homework:
-
-Using an entity relationship diagram, design the data model for an application of your choice; this could be anything, but previous students have used a small business (with staff, offices, and job titles), a library (with books, genres, racks, members, and a borrowing log), or a farm (with animals, barns, and farmers). Your application must include at least one many-to-many relationship and any supporting tables (associative entities) that are needed. The entity relationship diagram must describe what tables you will need, the columns in these tables, which column is the primary key, and the relationships between tables.
-
-Next, using the entity relationship diagram as a starting point, write all the necessary `CREATE TABLE` statements to create all tables and relationships (foreign key constraints) for this data model.
-
-Submit an image or PDF of your entity relationship diagram, and a `.sql` file with the `CREATE TABLE` statements.
-
-## Check out the [React repo](https://github.com/HackYourFuture-cph/React)
-And find out how you can prepare for the first React lecture :dancers:
+- Complete the `homework.js` script so that you have a functional node application. In particular, add the necessary code to the functions:
+    - `addNewTask`, to add a new task
+    - `changeTaskTitle`, to change the title of a task
+    - `changeTaskDueDate`, to change the due date of a task
+    - `changeTaskStatus`, to change the status of a task
+    - `markTaskAsCompleted`, to mark a task as completed
+    - `deleteTask`, to delete a task
+    - `deleteUser`, to delete a user
+- Create a new database containing the following tables:
+    - **Class**: with the columns: id, name, begins (date), ends (date)
+    - **Student**: with the columns: id, name, email, phone, class_id (foreign key)
+- If you are done with the above tasks, you can continue with these advanced tasks:
+    - Create an index on the name column of the student table.
+    - Add a new column to the class table named **status** which can only have the following values: not-started, ongoing, finished (hint: enumerations).

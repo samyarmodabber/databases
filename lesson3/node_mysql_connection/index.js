@@ -13,8 +13,14 @@ var connection = mysql.createConnection({
 
 connection.connect();
 
+connection.query('INSERT INTO user (name, email, phone) VALUES(?, ?, ?) ', ['Stripes3', 'stripes@gmail.com', '111-222-333'], function(error, results, fields) {
+    console.log(results);
+});
+
 connection.query('SELECT * FROM user', function(error, results, fields) {
     console.log(results);
 });
+
+
 
 connection.end();

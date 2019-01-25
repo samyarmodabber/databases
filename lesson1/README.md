@@ -18,6 +18,14 @@ Before arriving to class on Sunday, please watch all of the videos in [this vide
 - Using aggregate functions
 - Joining tables
 
+## Installing MySQL workbench
+
+We will be using MySQL workbench in the classes to interact with our databases.
+If you are using Windows you can download it from [here](https://dev.mysql.com/downloads/windows/installer/8.0.html), choose the file with ~300MB.
+If you are using linux or macOS you first need to install the MySQL server (through synaptic or brew probably) and then you can download MySQL workbench [here](https://dev.mysql.com/downloads/workbench/) after selecting your operating system.
+
+Do NOT forget the password you set up when installing MySQL workbench!
+
 
 ## Main Topics
 
@@ -47,6 +55,7 @@ Before arriving to class on Sunday, please watch all of the videos in [this vide
 - [Official MySQL Tutorial (pretty dense)](https://dev.mysql.com/doc/refman/5.7/en/tutorial.html)
 - [Joel Spolsky - Character Sets and Unicode](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
 
+
 ## Homework
 
 Design queries that retrieve the following data sets. Compare with classmates to see if your answers are correct.
@@ -62,11 +71,3 @@ Design queries that retrieve the following data sets. Compare with classmates to
 9. Get the name of each status, along with a count of how many tasks have that status
 10. Get the names of all statuses, sorted by the status with most tasks first
 
-
-Watch the previous session recorded on video here:
-
-Part 1 : https://www.youtube.com/watch?v=gAeww1z5774
-
-Part 2 : https://www.youtube.com/watch?v=u77w6Lw2gOY
-
-Part 3 : https://www.youtube.com/watch?v=Mag9n6olmRU

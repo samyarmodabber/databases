@@ -18,9 +18,6 @@ By the end of this module, students should have a familiarity with and basic und
 - Non-relational data and NoSQL
 - MongoDB as an example of a NoSQL database
 
-## The Practice Database
-
-The login information for the student practice database will be provided during the first class. If you don't have them, send us a message - you will need the username, password, hostname, port, and database name.
 
 ## Lesson Plan
 
@@ -33,16 +30,13 @@ Objective: Students should be able to retrieve data from a database table using 
 ### Lesson 2: Practical Database Usage
 
 In this class, students will learn how to use more complex SQL queries to retrieve information across tables, and interact with data including write operations.
+Additional theory will be covered to discuss more complex relational data. Students will learn about entity relationship modelling and how to convert these models to a database schema using normalisation and foreign-key constraints
 
-Objective: Students should be able to build CRUD functionality using SQL statements, including INSERT INTO, UPDATE WHERE, etc. Students will also have a basic understanding of database usage in a web application, including parameter validation, escaping, and prepared statements.
+Objective: Students should be able to build CRUD functionality using SQL statements, including INSERT INTO, UPDATE WHERE, etc. Students should be able to create an entity relationship diagram based on a qualitative description of data requirements, and translate that into a MySQL database schema.
 
 ### Lesson 3: Data Models, Relationships, and Schemas
 
-In the final week, additional theory will be covered to discuss more complex relational data. Students will learn about entity relationship modelling and how to convert these models to a database schema using normalisation and foreign-key constraints. Non-relational data will also be considered, as well as the benefits and drawbacks of relational and non-relational models.
+In the final week, students will learn how to use NodeJS to interact with a MySQL database. MongoDB, as an example of a non-relational database, will also be introduced, as well as the benefits and drawbacks of relational and non-relational models.
 
-Objective: Students should be able to create an entity relationship diagram based on a qualatative description of data requirements, and translate that into a MySQL database schema. Students should also be able to compare and contrast relational (like MySQL) and NoSQL databases (considering their benefits and drawbacks).
+Objective: Students will have a basic understanding of database usage in a web application, including parameter validation, escaping, and prepared statements. Students should also be able to compare and contrast relational (like MySQL) and NoSQL databases (considering their benefits and drawbacks).
 
-## Handing in homework
-Take a look at [this video](https://www.youtube.com/watch?v=-o0yomUVVpU&index=2&list=PLVYDhqbgYpYUGxRdtQdYVE5Q8h3bt6SIA) made by Daan, he explains how your homework needs to be handed in.
-
-Also review the Git [workflow material](https://github.com/HackYourFuture/Git/blob/master/Lecture-3.md) from the JavaScript3 module, use this as a reference.
