@@ -1,4 +1,4 @@
-# Lesson 2: Practical Database Usage
+# Lesson 2: Data Models, Relationships, and Schemas
 
 In this class, students will learn how to use more complex SQL queries to retrieve information across tables, and interact with data including write operations.
 
@@ -7,9 +7,8 @@ Objective: Students should be able to build CRUD functionality using SQL stateme
 
 ## Pre-Class Readings
 
-Please read the following page that explains database foreign keys.
 - [What is a Database Foreign Key](http://databases.about.com/cs/specificproducts/g/foreignkey.htm)
-
+- [Example Entity Relationship Diagram (including associative entities)](http://users.csc.calpoly.edu/~jdalbey/308/Lectures/HOWTO-ERD.html)
 
 ## Main Topics
 
@@ -36,7 +35,10 @@ Please read the following page that explains database foreign keys.
 
 - [Falsehoods Programmers Believe About Names](http://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/)
 - [Floating Point Inaccuracy](http://stackoverflow.com/questions/2100490/floating-point-inaccuracy-examples#2100502)
-- [Example Entity Relationship Diagram (including associative entities)](http://users.csc.calpoly.edu/~jdalbey/308/Lectures/HOWTO-ERD.html)
+- [TutorialsPoint MySQL Introduction](http://www.tutorialspoint.com/mysql/mysql-introduction.htm)
+- [w3schools tutorial (easy to find how specific commands work)](https://www.w3schools.com/sql/default.asp)
+- [Official MySQL Documentation](https://dev.mysql.com/doc/refman/5.7/en/)
+
 
 
 ## Homework

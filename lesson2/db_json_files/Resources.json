@@ -1,0 +1,101 @@
+[
+    {
+        "Id": "1",
+        "Type": "Podcast",
+        "Title": "My velvet jacket",
+        "Description": "This podcast is about my velvet jacket that has been in my family for generations.",
+        "Comments": {
+            "Comment1": {
+                "Submission_date": "2019-01-22",
+                "User": "3",
+                "Comment": "Wow, I was touched by this episode!",
+                "Likes": "5",
+                "Status": "Active"
+            }
+        },
+        "Content_Language": "English",
+        "Hashtags": {
+            "Hashtags1": "#jacket",
+            "Hashtags2": "#velvet",
+            "Hashtags3": "#grandmother"
+        },
+        "Image file": "https://s3.eu-north-1.amazonaws.com/hyf-fabric/images/my_velvet_jacket.png",
+        "Netcast file": "https://s3.eu-north-1.amazonaws.com/hyf-fabric/podcasts/english_my_velvet_jacket.mp3",
+        "Submission date": "2019-01-20",
+        "Change Status date": "2019-01-22",
+        "Status": "Active"
+    },
+    {
+        "Id": "2",
+        "Type": "Videocast",
+        "Title": "Min videocast",
+        "Description": "",
+        "Comments": "",
+        "Content Language": "Dansk",
+        "Hashtags": "",
+        "Image file": "",
+        "Netcast file": "",
+        "Submission date": "2019-01-20",
+        "Change Status date": "2019-01-21",
+        "Status": "NotApproved"
+    },
+    {
+        "Id": "3",
+        "Type": "Podcast",
+        "Title": "Mit Brune Taeppe",
+        "Description": "Mit Brune Tæppe er mega flot!",
+        "Comments": {
+            "Comment1": {
+                "Submission_date": "2019-01-22",
+                "User": "3",
+                "Comment": "Jeg synes ikke det er mega flot!",
+                "Likes": "5",
+                "Status": "Active",
+                "Reply1": {
+                    "Submission_date": "2019-01-22",
+                    "User": "2",
+                    "Comment": "Okay, Tak for feedbacken!",
+                    "Likes": "0",
+                    "Status": "Active"
+                }
+            },
+            "Comment2": {
+                "Submission_date": "2019-01-23",
+                "User": "1",
+                "Comment": "Det er mega flot!",
+                "Likes": "3",
+                "Status": "Active"
+            }
+        },
+        "Content Language": "Dansk",
+        "Hashtags": {
+            "Hashtags1": "#brune",
+            "Hashtags2": "#taeppe",
+            "Hashtags3": "#picnic",
+            "Hashtags4": "#farmor"
+        },
+        "Image file": "",
+        "Netcast file": "https://s3.eu-north-1.amazonaws.com/hyf-fabric/podcasts/danish_mit_brune_taeppe.mp3",
+        "Submission date": "2019-01-20",
+        "Change Status date": "2019-01-22",
+        "Status": "Archived"
+    },
+    {
+        "Id": "4",
+        "Type": "Podcast",
+        "Title": "Min mormors kjole",
+        "Description": "Min mormor sy kjoler.",
+        "Comments": "",
+        "Content Language": "Dansk",
+        "Hashtags": {
+            "Hashtags1": "#mormor",
+            "Hashtags2": "#kjole",
+            "Hashtags3": "#sy"
+        },
+        "Image file": "https://s3.eu-north-1.amazonaws.com/hyf-fabric/images/mit_brune_taeppe.png",
+        "Netcast file": "https://s3.eu-north-1.amazonaws.com/hyf-fabric/podcasts/danish_my_grandmothers_dress.mp3",
+        "Submission date": "2019-01-25",
+        "Change Status date": "2019-01-25",
+        "Status": "OnReview"
+    }
+]

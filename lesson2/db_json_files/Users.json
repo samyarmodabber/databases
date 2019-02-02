@@ -1,0 +1,46 @@
+[
+    {
+        "Id": "1",
+        "First Name": "Jens",
+        "Last Name": "Jensen",
+        "Bday": "1990-04-30",
+        "Role": {
+            "Type": "Reviewer",
+            "Status": "Active"
+        },
+        "Status": "Active"
+    },
+    {
+        "Id": "2",
+        "First Name": "Anne",
+        "Last Name": "Petersen",
+        "Bday": "1993-03-19",
+        "Role": {
+            "Type": "Reviewer",
+            "Status": "Active"
+        },
+        "Status": "NotActive"
+    },
+    {
+        "Id": "3",
+        "First Name": "Nina",
+        "Last Name": "Larsen",
+        "Bday": "1998-01-08",
+        "Role": {
+            "Type": "Podcaster",
+            "Status": "Active"
+        },
+        "Status": "Active"
+    },
+    {
+        "Id": "4",
+        "First Name": "Marie",
+        "Last Name": "Hansen",
+        "Bday": "2000-02-22",
+        "Role": {
+            "Type": "Podcaster",
+            "Status": "Active"
+        },
+        "Status": "Blocked"
+    }
+]
