@@ -21,7 +21,9 @@ Before arriving to class on Sunday, please watch all of the videos in [this vide
 ## Installing MySQL workbench
 
 We will be using MySQL workbench in the classes to interact with our databases.
+
 If you are using Windows you can download it from [here](https://dev.mysql.com/downloads/windows/installer/8.0.html), choose the file with ~300MB.
+
 If you are using linux or macOS you first need to install the MySQL server (through synaptic or brew probably) and then you can download MySQL workbench [here](https://dev.mysql.com/downloads/workbench/) after selecting your operating system.
 
 Do NOT forget the password you set up when installing MySQL workbench!
