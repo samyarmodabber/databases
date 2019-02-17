@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
     database: config.database
 });
 
-connection.connect();
+db=connection.connect();
 
 connection.query('INSERT INTO user (name, email, phone) VALUES(?, ?, ?) ', ['Stripes3', 'stripes@gmail.com', '111-222-333'], function(error, results, fields) {
     console.log(results);
